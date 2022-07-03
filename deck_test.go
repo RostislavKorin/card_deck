@@ -25,7 +25,7 @@ func TestNewDeckSize(t *testing.T) {
 
 	d.shuffle()
 
-	if !reflect.DeepEqual(d, newDeck()) {
+	if reflect.DeepEqual(d, newDeck()) {
 		t.Errorf("Original deck is equal to the shuffled deck")
 	}
 }

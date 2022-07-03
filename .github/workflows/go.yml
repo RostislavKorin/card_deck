@@ -22,4 +22,5 @@ jobs:
       run: go build  main.go deck.go
 
     - name: Test
+      run: go build
       run: go test
